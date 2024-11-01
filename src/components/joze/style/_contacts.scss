@@ -1,0 +1,285 @@
+.contacts {
+  position: relative;
+  background-color: $light-black;
+  font-family: "Gilroy", serif;
+}
+
+.contacts::before {
+  position: absolute;
+  content: "";
+  top: 506px;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  background-image: url("/joze/заебала-карта-сдохни-дизайнер-тупой.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__block {
+  padding-top: 45px;
+  position: relative;
+}
+
+.contacts__wrapper-top {
+  display: flex;
+  margin-bottom: 72px;
+  padding-left: 68px;
+  padding-bottom: 69px;
+  padding-top: 73px;
+  column-gap: 12%;
+  background: linear-gradient(90deg, #211f20 0%, rgba(68, 64, 63, 0) 100%),
+    url("/joze/фон-картинка-контакты.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__h2 {
+  margin-bottom: 24px;
+  @include fonts(32px, 700, normal, $white);
+}
+
+.contacts__text {
+  @include fonts(20px, 400, 125%, $light-grey);
+}
+
+.contacts__list-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 50%;
+}
+
+.contacts__wrapper-text {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__wrapper-text-top {
+  padding-top: 26px;
+}
+
+.contacts__button-top {
+  width: 39%;
+  margin-bottom: 32px;
+  padding: 21px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  @include fonts(13px, 700, normal, $white);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.05);
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__button-top:hover:not(:focus-visible) {
+  background-color: #211f20;
+}
+
+.contacts__item-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  justify-content: space-between;
+  padding-bottom: 41px;
+  width: 15vw;
+  height: 15vw;
+  backdrop-filter: blur(4px);
+  background: rgba(80, 75, 74, 0.9);
+  @include fonts(18px, 400, 139%, $white);
+}
+
+.contacts__wrapper-bot {
+  padding-left: 65px;
+  padding-bottom: 41px;
+}
+
+.contacts__contacts {
+  padding-bottom: 17px;
+  width: 41%;
+  border-radius: 15px;
+  background-color: $dark-brown;
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.15);
+  padding-top: 20px;
+  padding-left: 43px;
+}
+
+.contacts__h2-bot {
+  margin-bottom: 42px;
+  @include fonts(30px, 700, normal, $white);
+}
+
+.contacts__item-bot {
+  padding-left: 45px;
+  @include fonts(14px, 400, normal, $light-grey);
+}
+.conacts__span {
+  font-style: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.contacts__adress {
+  @include fonts(16px, 600, normal, $white);
+  font-style: normal;
+}
+
+.contacts__image-location {
+  background-image: url("/joze/контакты-локация.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 10px;
+}
+
+.contacts__email {
+  @include fonts(16px, 600, normal, $white);
+  display: block;
+  width: 38%;
+}
+
+.contacts__image-email {
+  background-image: url("/joze/контакты-почта.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 10px;
+}
+
+.contacts__list-bot {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts__book {
+  margin-bottom: 29px;
+  display: flex;
+  column-gap: 30px;
+  padding-top: 45px;
+  padding-left: 11px;
+}
+
+.contacts__button-book {
+  background-color: $green;
+  padding: 20px 32px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  @include fonts(13px, 700, normal, $white);
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__button-book:hover:not(:focus-visible) {
+  background-color: #397379;
+}
+
+.contacts__link-book {
+  width: 48%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-left: 3px;
+  @include fonts(23px, 700, normal, $white);
+}
+
+.contacts__span-book {
+  @include fonts(13px, 400, normal, $light-grey);
+}
+
+.contacts__socio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fonts(16px, 600, normal, $white);
+}
+
+.contacts__list-socio {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts__socio-h3 {
+  margin-right: 16px;
+  padding-bottom: 5px;
+}
+
+.contacts__svg {
+  fill: white;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__svg:hover:not(:focus-visible) {
+  fill: #79b282;
+}
+
+.contacts__rout {
+  display: none;
+  padding: 20px 32px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  @include fonts(13px, 700, normal, $white);
+}
+
+.contacts__socio-f {
+  fill: white;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__socio-f:hover:not(:focus-visible) {
+  fill: #0165e1;
+}
+
+.contacts__socio-w {
+  fill: white;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__socio-w:hover:not(:focus-visible) {
+  fill: #4d7198;
+}
+
+.contacts__socio-y {
+  fill: white;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__socio-y:hover:not(:focus-visible) {
+  fill: #cd201f;
+}
+
+.contacts__socio-i {
+  fill: white;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.contacts__socio-i:hover:not(:focus-visible) {
+  fill: #f56040;
+}

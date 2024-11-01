@@ -1,0 +1,150 @@
+@import "../../app/page.module.scss";
+.price {
+  margin-bottom: 66px;
+  &_container {
+    background-image: url("/price_back.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  &_header {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 87%;
+    color: $white;
+    margin-bottom: 72px;
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 59px;
+    gap: 22px;
+  }
+  &_item {
+    max-width: 975px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 0 25px 10px rgba(187, 187, 187, 0.25);
+    background: #000;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+
+    padding: 25px 50px;
+    transition: border-color 0.3s linear;
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: $purple;
+      }
+    }
+  }
+  .title {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 30px;
+
+    line-height: 116%;
+    color: $white;
+    margin-bottom: 3px;
+  }
+  .sub_title {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116%;
+    color: #adadad;
+  }
+  .price_num {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 116%;
+    color: #fff;
+  }
+  .additional {
+    background: transparent;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    max-width: 870px;
+    width: 100%;
+    box-shadow: 0 0 25px 10px rgba(187, 187, 187, 0.25);
+    margin-left: auto;
+    padding: 31px 49px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    &_text {
+      font-family: "Rubik";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 116%;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .price {
+    &_header {
+      font-size: 60px;
+      margin-bottom: 44px;
+    }
+    &-list {
+      margin-bottom: 23px;
+    }
+    &_item {
+      max-width: 891px;
+    }
+  }
+  .additional {
+    max-width: 693px;
+    width: 100%;
+  }
+}
+@media (max-width: 884px) {
+  .price {
+    &_header {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+    &-list {
+      margin-bottom: 16px;
+    }
+    &_item {
+      max-width: 607px;
+      padding: 17px 34px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .sub_title {
+      font-size: 14px;
+    }
+    .additional {
+      max-width: 501px;
+      &_text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 610px) {
+  .price {
+    &_header {
+      font-size: 30px;
+      margin-bottom: 28px;
+    }
+    &_list {
+      margin-bottom: 21px;
+    }
+    &_item {
+      padding: 13px 15px;
+      flex-direction: column;
+    }
+
+    .price_num {
+      align-self: flex-end;
+      font-size: 20px;
+    }
+  }
+}

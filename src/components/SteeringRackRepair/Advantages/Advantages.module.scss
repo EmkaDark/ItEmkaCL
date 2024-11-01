@@ -1,0 +1,185 @@
+.advantages {
+  margin-bottom: 80px;
+  .header_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 62px;
+  }
+  .header_sub_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 69px;
+    gap: 9px;
+  }
+  &_num {
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 129%;
+    text-align: center;
+    color: #2aaf5e;
+    margin-right: 17px;
+  }
+  &_header {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 129%;
+    text-align: center;
+    color: #333;
+  }
+  &_desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 129%;
+    color: #333;
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    row-gap: 52px;
+    margin-bottom: 82px;
+    background-image: url("/SteeringRackRepair/rule2.png");
+    background-repeat: no-repeat;
+    background-size: 209px;
+    background-position: 90% 100%;
+  }
+  &_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    max-width: calc((100% - (36px * 2)) / 3);
+    width: 100%;
+  }
+
+  &_number {
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 129%;
+    color: #333;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40%;
+      background-color: #fff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #2aaf5e;
+    }
+  }
+  &_list_header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 129%;
+    color: #333;
+  }
+  &_list_desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: #333;
+  }
+  .bid {
+    max-width: 615px;
+    width: 100%;
+    height: 215px;
+    padding: 34px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 1px 15px 0 rgba(207, 207, 207, 0.25);
+    background: #fff;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 12px 10px;
+      border: 1px solid #e6e6e6;
+      pointer-events: none;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 187%;
+      text-align: center;
+      color: #333;
+      margin-bottom: 7px;
+    }
+    &_price {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    &_button {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 129%;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      padding: 15px 49px;
+      border-radius: 50px;
+      background: #2aaf5e;
+      border: 1px solid #2cb667;
+      cursor: pointer;
+      transition: color 0.3s linear, background 0.3s linear;
+      &:hover {
+        color: #2cb667;
+        background: #fff;
+      }
+    }
+  }
+}
+
+@media all and (width < 1140px) {
+  .advantages {
+    &_list {
+      background-image: none;
+    }
+    &_item {
+      max-width: calc((100% - 36px) / 2);
+    }
+  }
+}
+
+@media all and (width < 500px) {
+  .advantages {
+    .header_group {
+      margin-bottom: 30px;
+    }
+    &_header {
+      font-size: 18px;
+      text-align: start;
+    }
+    &_desc {
+      font-size: 14px;
+    }
+    &_item {
+      max-width: 100%;
+      flex-direction: column;
+    }
+    &_list_header {
+      font-size: 16px;
+    }
+    .bid {
+      padding: 32px 15px;
+      &_desc {
+        font-size: 14px;
+      }
+    }
+  }
+}

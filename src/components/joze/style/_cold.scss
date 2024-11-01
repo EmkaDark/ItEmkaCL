@@ -1,0 +1,30 @@
+.cold {
+    background-color: $light-black;
+    font-family: 'Gilroy', serif;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.3);
+}
+
+.cold__block {
+    padding-top: 40px;
+    padding-bottom: 46px;
+}
+
+.cold__wrapper-h2 {
+    padding-left: 72px;
+    margin-bottom: 49px;
+}
+
+.cold__h2 {
+    position: relative;
+    @include fonts (41px, 500, normal, $white);
+}
+
+.cold__h2::before {
+    position: absolute;
+    content: '';
+    top: 14px;
+    left: -23px;
+    width: 4px;
+    background-color: $green;
+    height: 32px;
+}

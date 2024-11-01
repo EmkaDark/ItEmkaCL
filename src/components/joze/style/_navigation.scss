@@ -1,0 +1,29 @@
+.navigation {
+    font-family: 'Gilroy', serif;
+    background-color: $light-black;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.3);
+}
+
+.navigation__block {
+    padding-left: 39px;
+    padding-top: 29px;
+    padding-right: 48px;
+    padding-bottom: 28px;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__link-item {
+    @include fonts (18px, 400, normal, $light-grey);
+    transition-duration: .2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.navigation__link-item:hover:not(:focus-visible) {
+    color: #fff;
+}  

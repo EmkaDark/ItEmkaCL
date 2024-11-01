@@ -1,0 +1,139 @@
+@import "../../app/page.module.scss";
+.command {
+  margin-bottom: 320px;
+  &_header {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 87%;
+    color: $white;
+    margin-bottom: 70px;
+  }
+  &_img {
+    max-width: 283px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  div {
+    margin-bottom: 25px;
+  }
+  &_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  &_item {
+    max-width: calc((100% - (90px * 3)) / 4);
+    width: 100%;
+  }
+  &_dev {
+    display: block;
+    font-family: "Rubik", "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 116%;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  &_prof {
+    display: block;
+    font-family: "Rubik", "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 116%;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .command {
+    margin-bottom: 206px;
+    &_header {
+      font-size: 60px;
+    }
+    &_list {
+      gap: 57px;
+    }
+    &_item {
+      max-width: calc((100% - (57px * 3)) / 4);
+      width: 100%;
+    }
+    &_dev {
+      font-size: 24px;
+    }
+    &_prof {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 884px) {
+  .command {
+    margin-bottom: 121px;
+    &_header {
+      font-size: 38px;
+    }
+    &_list {
+      gap: 29px;
+    }
+    &_item {
+      max-width: calc((100% - (29px * 3)) / 4);
+      width: 100%;
+    }
+    &_dev {
+      font-size: 20px;
+    }
+    &_prof {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .command {
+    margin-bottom: 59px;
+    &_list {
+      gap: 26px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    &_item {
+      max-width: calc((100% - 26px) / 2);
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .command {
+    &_header {
+      font-size: 30x;
+    }
+    &_list {
+      gap: 26px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    &_item {
+      max-width: calc((100% - 26px) / 2);
+      width: 100%;
+    }
+    &_list {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    &_dev {
+      font-size: 18px;
+    }
+    &_prof {
+      font-size: 14px;
+    }
+  }
+}

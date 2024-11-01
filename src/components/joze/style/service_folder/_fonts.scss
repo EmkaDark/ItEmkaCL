@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Regular"),
+    url("../../../../fonts/joze/GilroyRegular.woff2") format("woff2"),
+    url("../../../../fonts/joze/GilroyRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Medium"),
+    url("../../../../fonts/joze/GilroyMedium.woff2") format("woff2"),
+    url("../../../../fonts/joze/GilroyMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Semi-Bold"),
+    url("../../../../fonts/joze/GilroySemiBold.woff2") format("woff2"),
+    url("../../../../fonts/joze/GilroySemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Bold"),
+    url("../../../../fonts/joze/GilroyBold.woff2") format("woff2"),
+    url("../../../../fonts/joze/GilroyBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

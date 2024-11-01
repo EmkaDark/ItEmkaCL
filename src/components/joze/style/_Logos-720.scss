@@ -1,0 +1,46 @@
+@media (max-width: 720px) {
+  .header__form {
+    display: none;
+  }
+
+  .header__form-mobile {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header__input::placeholder {
+    font-size: 14px;
+  }
+
+  .header__button {
+    margin-bottom: 9px;
+  }
+
+  .header__wrapper-left {
+    justify-content: center;
+  }
+
+  .contacts__book {
+    flex-direction: column;
+  }
+
+  .contacts__link-book {
+    width: 80%;
+  }
+
+  .contacts {
+    padding-bottom: 463px;
+  }
+
+  .contacnts__span-location {
+    position: absolute;
+    width: 98px;
+    height: 111px;
+    background-image: url("/joze/точка-локации.png");
+    background-repeat: no-repeat;
+    bottom: 178px;
+    left: 38%;
+  }
+}

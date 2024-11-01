@@ -1,0 +1,81 @@
+@import "./page.module.scss";
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff2) format(woff2),
+    url(../fonts/Montserrat-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff2) format(woff2),
+    url(../fonts/Roboto-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.woff2) format(woff2),
+    url(../fonts/Roboto-Bold.woff) format(woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/Rubik-Regular.woff2) format(woff2),
+    url(../fonts/Rubik-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url(../fonts/Unbounded-Regular.woff2) format(woff2),
+    url(../fonts/Unbounded-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Unbounded-Bold";
+  src: url(../fonts/Unbounded-Bold.woff2) format(woff2),
+    url(../fonts/Unbounded-Bold.woff) format(woff);
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  font-family: "Unbounded", "Montserrat", "Roboto", open-sans;
+}
+.container {
+  max-width: 1670px;
+  width: 100%;
+  padding: 0 155px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 105px;
+  }
+}
+@media (max-width: 884px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    padding: 0 20px;
+  }
+}

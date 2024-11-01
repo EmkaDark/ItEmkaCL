@@ -1,0 +1,177 @@
+@import "../../app/page.module.scss";
+.service {
+  margin-bottom: 173px;
+  &_header {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 87%;
+    color: $white;
+    margin-bottom: 31px;
+  }
+  &_desc {
+    font-family: "Rubik", "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 116%;
+    color: $textGrey;
+    margin-bottom: 77px;
+  }
+  &_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  &_item {
+    max-width: calc((100% - 40px) / 2);
+    width: 100%;
+    padding: 37px 64px;
+    border: 2px solid #7a3992;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 25px 10px rgba(187, 187, 187, 0.25);
+    box-shadow: 0 0 25px 10px rgba(187, 187, 187, 0.25);
+    background: $black;
+    background-color: rgba(122, 57, 146, 0);
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgba(122, 57, 146, 0.5);
+      }
+    }
+  }
+  &_head {
+    font-family: "Rubik", "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+
+    line-height: 116%;
+    color: $white;
+    margin-bottom: 18px;
+  }
+  &_sub_desc {
+    font-family: "Rubik", "Unbounded", sans-serif;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116%;
+    color: $textGrey;
+  }
+  &_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 113%;
+    color: $white;
+    max-width: calc((100% - 40px) / 2);
+    border: 2px solid #7a3992;
+    border-radius: 5px;
+    padding: 29px 58px;
+    max-width: calc((100% - 40px) / 2);
+    height: 83px;
+    background: #7a3992;
+    text-wrap: nowrap;
+    -webkit-transition: border-color 0.3s linear;
+    -o-transition: border-color 0.3s linear;
+    transition: border-color 0.3s linear;
+    span {
+      display: block;
+      width: 100%;
+    }
+    @media (hover: hover) {
+      &:hover {
+        border-color: $white;
+      }
+    }
+    &:focus-visible {
+      border-color: $white;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .service {
+    &_header {
+      font-size: 60px;
+    }
+    &_item {
+      padding: 46px 41px;
+    }
+    &_link {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+@media (max-width: 884px) {
+  .service {
+    margin-bottom: 101px;
+    &_header {
+      font-size: 38px;
+    }
+    &_desc {
+      font-size: 20px;
+    }
+    &-item {
+      padding: 36px;
+    }
+    &_head {
+      font-size: 24px;
+    }
+    &_sub_desc {
+      font-size: 18px;
+    }
+    &_link {
+      margin: 0 auto;
+      padding: 20px 40px;
+      max-width: 466px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .service {
+    &_item {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .service {
+    margin-bottom: 68px;
+    &_header {
+      font-size: 30px;
+    }
+    &_desc {
+      font-size: 18px;
+    }
+    &_item {
+      padding: 22px 15px;
+    }
+    &_head {
+      font-size: 22px;
+    }
+    &_sub_desc {
+      font-size: 16px;
+    }
+    &_link {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 18px;
+    }
+  }
+}

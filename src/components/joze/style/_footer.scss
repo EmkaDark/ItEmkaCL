@@ -1,0 +1,55 @@
+.footer {
+    background: linear-gradient(304deg, #44403f 0%, #211f20 100%);
+    font-family: 'Gilroy', serif;
+}
+
+.footer__block {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 31px;
+}
+
+.footer__button {
+    margin-right: 4%;
+    padding-top: 20px;
+}
+
+.footer__info {
+    
+}
+.footer__link-logo {
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.footer__text-info-span {
+    display: block;
+}
+
+.footer__info-link {
+    @include fonts (14px, 500, normal, $white);
+    text-decoration: underline rgba(255, 255, 255, 0.2);
+}
+
+.footer__text-info {
+    display: block;
+    margin-bottom: 4px;
+    @include fonts (12px, 500, normal, $light-grey);
+}
+
+.footer__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__list-right {
+    display: flex;
+    padding-top: 62px;
+    padding-left: 74px;
+    gap: 40px;
+}
+
+.footer__link-right {
+    @include fonts (20px, 500, normal, $white);
+}

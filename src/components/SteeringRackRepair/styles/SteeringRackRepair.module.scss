@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../../../fonts/SteeringRackRepair/museosanscyrl-100.woff2)
+      format(woff2),
+    url(../../../fonts/SteeringRackRepair/museosanscyrl-100.woff) format(woff);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../../../fonts/SteeringRackRepair/museosanscyrl-300.woff2)
+      format(woff2),
+    url(../../../fonts/SteeringRackRepair/museosanscyrl-300.woff) format(woff);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../../../fonts/SteeringRackRepair/museosanscyrl-500.woff2)
+      format(woff2),
+    url(../../../fonts/SteeringRackRepair/museosanscyrl-500.woff) format(woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../../../fonts/SteeringRackRepair/museosanscyrl-700.woff2)
+      format(woff2),
+    url(../../../fonts/SteeringRackRepair/museosanscyrl-700.woff) format(woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../../../fonts/SteeringRackRepair/museosanscyrl-900.woff2)
+      format(woff2),
+    url(../../../fonts/SteeringRackRepair/museosanscyrl-900.woff) format(woff);
+  font-weight: 900;
+}
+
+.layout {
+  font-family: "MuseoSans";
+  //   color: black;
+  font-weight: 500;
+  background-color: white;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 375px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+@media all and (width < 1400px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media all and (width < 850px) {
+  .container {
+    padding: 0 21px;
+  }
+}
+@media all and (width < 400px) {
+  .container {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,192 @@
+.header {
+  padding-top: 22px;
+  margin-bottom: 27px;
+  .container {
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .flex {
+    display: flex;
+  }
+  .header_top {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+  .logo {
+    &:focus {
+      outline-color: #2bb261;
+    }
+  }
+  .logo_group {
+    max-width: 367px;
+    width: 100%;
+    gap: 14px;
+    margin-right: 14px;
+    align-items: center;
+    .logo {
+      // border: 1px solid;
+      &:focus {
+        outline-color: #2bb261;
+      }
+    }
+    .logo_img {
+      aspect-ratio: 1;
+      border-radius: 10%;
+    }
+    .header_logo_desc {
+      max-width: 201px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      color: #a7a7a7;
+    }
+  }
+  .header_info {
+    max-width: 496px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 18px;
+    .address {
+      align-items: center;
+      gap: 24px;
+      .addres_desc {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000;
+      }
+      .card_svg {
+        padding: 9px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px 0 rgba(172, 172, 172, 0.25);
+        background: #fff;
+        align-items: center;
+        justify-content: center;
+      }
+
+      gap: 24px;
+      max-width: 210px;
+    }
+    .phone_group {
+      gap: 24px;
+      align-items: center;
+      .phone_svg {
+        padding: 9px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px 0 rgba(172, 172, 172, 0.25);
+        background: #fff;
+      }
+      .phones {
+        text-align: right;
+        .phone {
+          display: block;
+          font-weight: 600;
+          font-size: 16px;
+          text-align: right;
+          color: #000;
+          white-space: nowrap;
+          margin-bottom: 5px;
+          transition: color 0.3s linear;
+
+          &:hover {
+            color: #2bb261;
+          }
+          &:focus {
+            outline-color: #2bb261;
+            outline-offset: 3px;
+          }
+        }
+        .button {
+          font-weight: 300;
+          font-size: 12px;
+          text-align: right;
+          color: #333;
+          border-bottom: 1px dashed #333;
+          transition: color 0.3s linear, border-color 0.3s linear;
+          cursor: pointer;
+          &:hover {
+            color: #2bb261;
+            border-color: #2bb261;
+          }
+          &:focus {
+            color: #2bb261;
+            border-color: #2bb261;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (width < 1140px) {
+  .header {
+    .logo_group {
+      max-width: 152px;
+      .header_logo_desc {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (width < 850px) {
+  .header {
+    .logo_group {
+      max-width: 144px;
+    }
+    .header_info {
+      .card_svg {
+        display: none;
+      }
+      .phone_svg {
+        display: none;
+      }
+    }
+    .burger_btn {
+      display: flex;
+    }
+  }
+}
+
+@media all and (width < 500px) {
+  .header {
+    .container {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 5%;
+
+        width: 90%;
+        height: 2px;
+        background: #f2f2f2;
+      }
+    }
+    .header_top {
+      margin-bottom: 0;
+    }
+    .logo_group {
+      max-width: 103px;
+      margin-right: 7px;
+
+      img {
+        width: 103px;
+      }
+    }
+
+    .header_info {
+      .address {
+        .addres_desc {
+          font-size: 11px;
+        }
+      }
+      .phone_group {
+        display: none;
+      }
+    }
+  }
+}

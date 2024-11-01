@@ -1,0 +1,21 @@
+.hero {
+  background: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url(/joze/хиро-картинка.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__block {
+  padding-top: 72px;
+  padding-left: 43px;
+  padding-bottom: 122px;
+}
+
+.hero__image-375 {
+  display: none;
+}

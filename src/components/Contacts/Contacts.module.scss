@@ -1,0 +1,113 @@
+@import "../../app/page.module.scss";
+.contacts {
+  background: url("/contacts.png");
+  background-size: 768px auto;
+  background-repeat: no-repeat;
+  background-position: 25%;
+  padding-bottom: 135px;
+  &_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 40px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  &_head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    &_desc {
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 116%;
+      color: $textGrey;
+      margin-bottom: 39px;
+      max-width: 870px;
+      width: 100%;
+    }
+  }
+  &_header {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 87%;
+    color: $white;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .form_container {
+    max-width: 870px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .contacts {
+    &_header {
+      font-size: 60px;
+    }
+    &_head {
+      &_desc {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 1204px) {
+  .contacts {
+    &_container {
+      display: block;
+    }
+    &_head {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .form_container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 884px) {
+  .contacts {
+    &_header {
+      font-size: 38px;
+    }
+    &_head {
+      &_desc {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .contacts {
+    &_header {
+      font-size: 30px;
+    }
+    &_head {
+      gap: 28px;
+      &_desc {
+        font-size: 16px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}

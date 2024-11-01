@@ -1,0 +1,161 @@
+@import "../../app/page.module.scss";
+.hero {
+  padding-bottom: 200px;
+  background-image: url("/heroBack.png");
+  background-size: 761px;
+  background-repeat: no-repeat;
+  background-position: 15% 150%;
+  &_head {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 116%;
+    color: $white;
+    max-width: 1382px;
+    margin-bottom: 68px;
+    &_span {
+      color: $heroHead;
+      white-space: nowrap;
+    }
+  }
+  &_desc {
+    font-family: "Rubik", "Unbounded";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 116%;
+    color: $textGrey;
+    max-width: 941px;
+    margin-bottom: 100px;
+  }
+  &_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  &_sub_desc {
+    font-family: "Rubik", "Unbounded";
+    max-width: calc((100% - 40px) / 2);
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116%;
+    color: $textGrey;
+    margin-bottom: 50px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+  &_link {
+    border: 2px solid $purple;
+    background: $purple;
+    border-radius: 5px;
+    max-width: calc((100% - 40px) / 2);
+    width: 100%;
+    padding: 24px 34px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 113%;
+    color: $white;
+    -webkit-transition: border-color 0.3s linear;
+    -o-transition: border-color 0.3s linear;
+    transition: border-color 0.3s linear;
+    @media (hover: hover) {
+      &:hover {
+        border-color: $white;
+      }
+    }
+    &:focus-visible {
+      border-color: $white;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .hero {
+    background-position: 25% 150%;
+  }
+}
+@media (max-width: 1500px) {
+  .hero {
+    padding-bottom: 150px;
+    background-size: 500px;
+    background-position: 10% 90%;
+    &_head {
+      font-size: 60px;
+      margin-bottom: 48px;
+    }
+    &_desc {
+      font-size: 28px;
+      margin-bottom: 71px;
+    }
+    &_sub_desc {
+      font-size: 18px;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .hero {
+    &_head {
+      max-width: 100%;
+    }
+    &_sub_desc {
+      max-width: 75%;
+    }
+    &_link {
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 884px) {
+  .hero {
+    background-position: 0% 70%;
+    padding-bottom: 100px;
+    &_head {
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+    &-desc {
+      max-width: 100%;
+      font-size: 22px;
+      margin-bottom: 43px;
+    }
+    &_sub_desc {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    background-position: 50% 45%;
+    background-size: 500px;
+    padding-bottom: 0;
+    margin-bottom: 68px;
+    &_head {
+      font-size: 30px;
+      margin-bottom: 27px;
+    }
+    &_desc {
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
+    &_sub_desc {
+      max-width: 100%;
+      margin-bottom: 14px;
+    }
+    &_link {
+      font-size: 18px;
+      max-width: 100%;
+    }
+  }
+}

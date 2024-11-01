@@ -1,0 +1,176 @@
+@import "../../app/page.module.scss";
+
+.burger {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  display: none;
+  position: absolute;
+  right: 60px;
+  top: 19px;
+  &:focus-visible {
+    outline: none;
+    span {
+      background: $purple;
+    }
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+  }
+}
+.burger_container {
+  position: absolute;
+  top: 0;
+  right: 0%;
+
+  width: 270px;
+  height: 100vh;
+  background: #584e5a;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 19px 20px;
+  background: $black;
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  -o-transition: transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-box-shadow: 0px 15px 35px $purple;
+  box-shadow: 0px 15px 35px $purple;
+
+  z-index: 1;
+  &.active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  &_close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+    &:focus-visible {
+      outline: none;
+      span {
+        background: $purple;
+      }
+    }
+    span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 6px;
+
+      background-color: white;
+      &:first-child {
+        -webkit-transform: rotate(45deg) translate(12px, 12px);
+        -ms-transform: rotate(45deg) translate(12px, 12px);
+        transform: rotate(45deg) translate(12px, 12px);
+      }
+      &:last-child {
+        -webkit-transform: rotate(-45deg) translate(-12px, 12px);
+        -ms-transform: rotate(-45deg) translate(-12px, 12px);
+        transform: rotate(-45deg) translate(-12px, 12px);
+      }
+    }
+  }
+  &_item {
+    text-align: end;
+    margin-bottom: 40px;
+  }
+  &_link {
+    padding: 5px 10px;
+    color: $white;
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+    position: relative;
+    @include UnboundedRegular();
+    @media (hover: hover) {
+      &:hover {
+        color: $purple;
+      }
+    }
+    &:hover::before {
+      opacity: 1;
+      -webkit-transform: scaleX(100%);
+      -ms-transform: scaleX(100%);
+      transform: scaleX(100%);
+    }
+    &:focus-visible::before {
+      opacity: 1;
+      -webkit-transform: scaleX(100%);
+      -ms-transform: scaleX(100%);
+      transform: scaleX(100%);
+    }
+    &::before {
+      content: "";
+      @include hoverEffect();
+    }
+    &:active {
+      color: $white;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 60px;
+  }
+  .burger_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 20px;
+  }
+  .burger_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

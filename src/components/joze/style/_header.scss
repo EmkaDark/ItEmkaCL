@@ -1,0 +1,122 @@
+.header {
+  background-color: $light-black;
+  font-family: "Gilroy", serif;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-left: 57px;
+  padding-bottom: 23px;
+  padding-right: 32px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__wrapper-left {
+  display: flex;
+  width: 74%;
+  align-items: center;
+}
+
+.header__link-logo {
+  margin-right: 8%;
+  padding-top: 5px;
+}
+
+.header__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 59%;
+  margin-right: 17px;
+}
+
+.header__form-mobile {
+  display: none;
+}
+
+.header__lokation-image {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
+.header__input {
+  width: 100%;
+  padding: 15px;
+  padding-left: 41px;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: $grey;
+}
+
+.header__input::placeholder {
+  @include fonts(18px, 400, normal, $light-grey);
+}
+
+.header__search-image {
+  position: absolute;
+  top: 16px;
+  right: 21px;
+}
+
+.header__tel-wrapper {
+  height: 45px;
+  width: 187px;
+  padding-left: 52px;
+  background-image: url("/joze/иконка-телефон-топ.svg");
+  background-repeat: no-repeat;
+  background-position: top 6px left 10px;
+}
+
+.header__span-link-tel {
+  display: block;
+  @include fonts(12px, 400, 167%, $light-grey);
+}
+
+.header__link-tel {
+  @include fonts(16px, 700, normal, $white);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.header__link-tel:hover:not(:focus-visible) {
+  color: #d5c654;
+}
+
+.header__button {
+  position: relative;
+  width: 149px;
+  height: 53px;
+  padding-right: 51px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: $green;
+  background-image: url("/joze/корзина-заказ.svg");
+  background-position: top 13px right 11px;
+  background-repeat: no-repeat;
+  @include fonts(14px, 600, normal, $white);
+  transition-duration: 0.3s;
+  cursor: pointer;
+  transition-timing-function: linear;
+}
+
+.header__button::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 41px;
+  top: 3px;
+  right: 46px;
+  background-color: $white;
+  opacity: 30%;
+}
+
+.header__button:hover:not(:focus-visible) {
+  background-color: #397379;
+}

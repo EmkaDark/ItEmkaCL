@@ -1,0 +1,99 @@
+@import "../style/style.scss";
+.slider-item {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.slider__wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 162px;
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+  border-radius: 0 0 16px 16px;
+}
+
+.slider__wrapper-h-span {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__h3 {
+  @include fonts(22px, 700, normal, $white);
+}
+
+.slider__span-h3 {
+  @include fonts(12px, 400, normal, $white);
+  opacity: 60%;
+  padding-top: 7px;
+}
+
+.slider__text {
+  @include fonts(13px, 400, 131%, $white);
+  opacity: 60%;
+}
+
+.slider__price {
+  padding-top: 10px;
+  @include fonts(20px, 600, 131%, $white);
+}
+
+.slider__basket {
+  padding: 11px 52px 13px 15px;
+  background-image: url("/joze/корзина-заказ.svg");
+  background-repeat: no-repeat;
+  background-position: top 7px right 13px;
+  background-color: $green;
+  border-color: transparent;
+  border-radius: 10px;
+  @include fonts(14px, 600, 131%, $white);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.slider__basket:hover:not(:focus-visible) {
+  background-color: #397379;
+}
+
+.slider_wrapper-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__button {
+  padding: 22px 28px;
+  background-color: $green;
+  border-color: transparent;
+  border-radius: 10px;
+  @include fonts(14px, 600, 131%, $white);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.slider__button:hover:not(:focus-visible) {
+  background-color: #397379;
+}
+
+.slider__button-minus {
+  background-image: url("/joze/минус.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button-plus {
+  background-image: url("/joze/плюс.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-slide {
+  width: 100%;
+}

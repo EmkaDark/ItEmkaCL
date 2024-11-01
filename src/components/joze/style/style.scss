@@ -1,0 +1,42 @@
+@import "service_folder/reset";
+@import "service_folder/normalize";
+@import "service_folder/fonts";
+@import "service_folder/mixins";
+
+/*цвета начало*/
+
+$white: #fff;
+$light-black: #403c3b;
+$grey: #504b4a;
+$light-grey: #cfcfcf;
+$green: #72a479;
+$dark-brown: #2e2b2c;
+
+/*цвета конец*/
+
+@import "header";
+@import "hero";
+@import "navigation";
+@import "cold";
+@import "hotter";
+@import "meat";
+@import "contacts";
+@import "footer";
+
+body {
+  min-width: 320px;
+  font-family: serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1440px;
+}
+
+@import "Logos-1290";
+@import "Logos-768";
+@import "Logos-720";
+@import "Logos-375";

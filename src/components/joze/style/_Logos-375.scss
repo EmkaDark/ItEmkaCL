@@ -1,0 +1,134 @@
+@media (max-width: 500px) {
+  .container {
+    max-width: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__wrapper-left {
+    width: 32%;
+    align-items: normal;
+    padding-top: 10px;
+    height: 37px;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .hero {
+    background-image: url("/joze/логос-хиро-375.jpg");
+  }
+
+  .hero__block {
+    padding-top: 52px;
+    padding-left: 0;
+    padding-bottom: 54px;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .hero__image-375 {
+    display: block;
+    height: 190px;
+  }
+
+  .slider-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .image-slide {
+    height: 217px;
+  }
+
+  .slider__h3 {
+    font-size: 20px;
+  }
+
+  .slider__wrapper-content {
+    padding-top: 11px;
+    padding-bottom: 18px;
+    min-height: 149px;
+  }
+
+  .slider_wrapper-price {
+    align-items: center;
+  }
+
+  .slider__basket {
+    padding: 8px 45px 9px 13px;
+  }
+
+  .slider__price {
+    padding-top: 1px;
+  }
+
+  .contacts__wrapper-bot {
+    padding-top: 19px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contacts__contacts {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  .contacts__h2-bot {
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  .contacts__list-bot {
+    gap: 33px;
+  }
+
+  .contacts__book {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  .contacts__adress {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  .contacts__button-book {
+    margin-bottom: 22px;
+  }
+
+  .contacts__rout {
+    display: block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 17px;
+  }
+
+  .contacts::before {
+    background-image: url(/joze/контакты-375.jpg);
+    background-position: center;
+  }
+
+  .contacts__link-book {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 15px;
+  }
+
+  .contacts__socio {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .footer__list-right {
+    display: none;
+  }
+
+  .footer {
+    padding-bottom: 33px;
+  }
+}

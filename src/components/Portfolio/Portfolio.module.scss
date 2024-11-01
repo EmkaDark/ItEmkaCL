@@ -1,0 +1,125 @@
+@import "../../app/page.module.scss";
+.portfolio {
+  margin-bottom: 237px;
+  &_header {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 87%;
+    color: $white;
+    margin-bottom: 50px;
+  }
+  &_desc {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 116%;
+    color: $textGrey;
+    margin-bottom: 46px;
+  }
+  &_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 34px 42px;
+  }
+  &_item {
+    max-width: calc((100% - 42px) / 2);
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &_link {
+    display: block;
+    width: 100%;
+    padding: 60px 52px;
+    background-color: $darkGrey;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 113%;
+    color: $white;
+    min-height: 100%;
+    -webkit-transition: background-color 0.3s linear, border-color 0.3s linear;
+    -o-transition: background-color 0.3s linear, border-color 0.3s linear;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $purple;
+        border-color: $white;
+      }
+    }
+    &:focus-visible {
+      background-color: $purple;
+      border-color: $white;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .portfolio {
+    margin-bottom: 134px;
+    &_header {
+      font-size: 60px;
+    }
+    &_desc {
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 884px) {
+  .portfolio {
+    margin-bottom: 81px;
+    &_header {
+      font-size: 38px;
+    }
+    &_desc {
+      font-size: 20px;
+    }
+    &_list {
+      gap: 20px;
+      justify-content: space-between;
+    }
+    &_item {
+      max-width: calc((100% - 20px) / 2);
+    }
+    &_link {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .portfolio {
+    &_item {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .portfolio {
+    margin-bottom: 66px;
+    &_header {
+      font-size: 30px;
+    }
+    &_desc {
+      font-size: 16px;
+    }
+    &_list {
+      gap: 16px;
+    }
+    &_item {
+      &:nth-child(6),
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+    &_link {
+      padding: 40px 17px;
+      font-size: 18px;
+    }
+  }
+}

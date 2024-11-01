@@ -1,0 +1,281 @@
+@import "../../app/page.module.scss";
+.form {
+  &_label {
+    display: block;
+    margin-bottom: 37px;
+    span {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 113%;
+      color: $white;
+      display: block;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 35px 38px;
+      width: 100%;
+      border: 1.37px solid #bbb;
+      border-radius: 7px;
+      background-color: transparent;
+      background: none;
+      -webkit-transition: border-color 0.3s linear,
+        -webkit-box-shadow 0.3s linear;
+      transition: border-color 0.3s linear, -webkit-box-shadow 0.3s linear;
+      -o-transition: border-color 0.3s linear, box-shadow 0.3s linear;
+      transition: border-color 0.3s linear, box-shadow 0.3s linear;
+      transition: border-color 0.3s linear, box-shadow 0.3s linear,
+        -webkit-box-shadow 0.3s linear;
+      outline: none;
+      color: $white;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 113%;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+      &::-webkit-input-placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 113%;
+        color: #595959;
+      }
+      &::-moz-placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 113%;
+        color: #595959;
+      }
+      &:-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 113%;
+        color: #595959;
+      }
+      &::-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 113%;
+        color: #595959;
+      }
+      &::placeholder {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 113%;
+        color: #595959;
+      }
+      &:focus,
+      &:active {
+        border-color: $purple;
+        -webkit-box-shadow: 0px 0px 35px $purple;
+        box-shadow: 0px 0px 35px $purple;
+      }
+    }
+  }
+  &_header {
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 113%;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  .checkbox_group {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    padding: 45px 44px 60px 31px;
+    border: 1.37px solid #bbb;
+    border-radius: 7px;
+    margin-bottom: 62px;
+
+    &_label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 36px;
+      cursor: pointer;
+    }
+    span {
+      padding-left: 40px;
+      color: $white;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 113%;
+    }
+
+    &_input {
+      position: relative;
+      width: 0;
+      height: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 29px;
+        height: 29px;
+        border: 1px solid $white;
+        border-radius: 50px;
+        background-color: transparent;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: -7px;
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+        width: 12px;
+        height: 8px;
+        border-top-right-radius: 2px;
+        -webkit-transform: rotate(125deg);
+        -ms-transform: rotate(125deg);
+        transform: rotate(125deg);
+        color: white;
+        opacity: 0;
+      }
+      &:checked::before {
+        opacity: 1;
+        background-color: #7a3992;
+        border-color: transparent;
+      }
+      &:checked::after {
+        opacity: 1;
+      }
+      &:focus::before {
+        border-color: #7a3992;
+      }
+    }
+  }
+  &_btn {
+    border: 1.37px solid #7a3992;
+    border-radius: 7px;
+    padding: 40px 330px;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: $purple;
+    border: 2px solid transparent;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 113%;
+    color: #fff;
+    font-family: inherit;
+    -webkit-transition: border-color 0.3s linear;
+    -o-transition: border-color 0.3s linear;
+    transition: border-color 0.3s linear;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      border-color: $white;
+    }
+    &:focus-visible {
+      border-color: $white;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .form {
+    .checkbox_group {
+      &_label {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &_btn {
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 1204px) {
+  .form {
+    .checkbox_group {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 36px;
+      &_label {
+        max-width: 289px;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    &_btn {
+      max-width: 456px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+@media (max-width: 884px) {
+  .form {
+    &_label {
+      span {
+        font-size: 22px;
+      }
+      input {
+        padding: 26px 32px;
+      }
+    }
+    .checkbox_group {
+      padding-top: 28px;
+      padding-bottom: 35px;
+    }
+
+    &_header {
+      font-size: 22px;
+    }
+    &_btn {
+      font-size: 22px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .form {
+    &_label {
+      span {
+        font-size: 18px;
+      }
+      input {
+        padding: 20px 17px;
+      }
+    }
+    &_header {
+      font-size: 18px;
+    }
+    &_btn {
+      font-size: 18px;
+      padding: 27px 40px;
+    }
+  }
+}
