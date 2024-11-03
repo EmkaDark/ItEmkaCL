@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <meta
           name="subject"
@@ -54,7 +54,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Веб-студия IT Emka",
               "url": "https://itemka.ru",
-              "logo": "https://it-emka.ru/logo.png",
+              "logo": "https://itemka.ru/logo.png",
               "description": "Мы — веб-студия, которая занимается созданием и продвижением сайтов. Предлагаем услуги веб-разработки, SEO-оптимизации и дизайна.",
               "contactPoint": [
                 {
@@ -73,26 +73,23 @@ export default function RootLayout({
       <body>
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
-            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {
-              if (document.scripts[j].src === r) { return; }
-            }
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-            ym(97877806, "init", {
-              clickmap:true,
-              trackLinks:true,
-              accurateTrackBounce:true,
-              webvisor:true,
-              ecommerce:"dataLayer"
-            });
-          `}
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(98806982, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true
+    });
+  `}
         </Script>
         <noscript>
           <div>
             <img
-              src="https://mc.yandex.ru/watch/97877806"
+              src="https://mc.yandex.ru/watch/98806982"
               style={{ position: "absolute", left: "-9999px" }}
               alt=""
             />
