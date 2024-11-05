@@ -28,7 +28,7 @@ const Form = () => {
   const senddata = async (e: FormEvent) => {
     e.preventDefault();
     try {
-      const { data } = await instance.post("/api", {
+      const { data } = await instance.post("/api/", {
         name,
         phone,
         interested,
