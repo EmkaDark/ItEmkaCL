@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://itemka.ru",
+  baseURL: "https://itemka.ru",
 });
 
 export default instance;
