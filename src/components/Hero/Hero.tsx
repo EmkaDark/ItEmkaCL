@@ -23,7 +23,7 @@ const Hero = () => {
             это то, что мы предлагаем каждому клиенту.
           </p>
           <Link href={"#contacts"} className={styles.hero_link}>
-            Связаться снами
+            Связаться с нами
           </Link>
         </div>
       </div>

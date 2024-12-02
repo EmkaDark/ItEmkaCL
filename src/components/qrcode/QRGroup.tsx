@@ -115,7 +115,7 @@ const QRGroup = () => {
       </a>
       <div className="buttons_group">
         <button
-          className={vers.data ? "active" : ""}
+          className={`${vers.data ? "active" : ""} data-btn`}
           onClick={() => {
             setVers({ ...IVers, data: true });
             dispatch(cleanText());
@@ -124,7 +124,7 @@ const QRGroup = () => {
           Данные
         </button>
         <button
-          className={vers.url ? "active" : ""}
+          className={`${vers.url ? "active" : ""} data-btn`}
           onClick={() => {
             setVers({ ...IVers, url: true });
             dispatch(cleanText());
@@ -133,7 +133,7 @@ const QRGroup = () => {
           ссылка
         </button>
         <button
-          className={vers.allow ? "active" : ""}
+          className={`${vers.allow ? "active" : ""} data-btn`}
           onClick={() => {
             setVers({ ...IVers, allow: true });
             dispatch(cleanText());
